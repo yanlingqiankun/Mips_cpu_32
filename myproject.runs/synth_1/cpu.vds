@@ -1,0 +1,828 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Aug 21 00:54:53 2017
+# Process ID: 7176
+# Current directory: D:/verilog/myproject/myproject.runs/synth_1
+# Command line: vivado.exe -log cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+# Log file: D:/verilog/myproject/myproject.runs/synth_1/cpu.vds
+# Journal file: D:/verilog/myproject/myproject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu.tcl -notrace
+Command: synth_design -top cpu -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg676'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 319.348 ; gain = 75.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cpu' [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:24]
+	Parameter wea bound to: 2'b00 
+	Parameter dina bound to: 0 - type: integer 
+	Parameter para1 bound to: 5'b11111 
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/verilog/myproject/myproject.srcs/sources_1/new/controller.v:2]
+INFO: [Synth 8-638] synthesizing module 'maindec' [D:/verilog/myproject/myproject.srcs/sources_1/new/controller.v:68]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/controller.v:68]
+WARNING: [Synth 8-3848] Net ifexp in module/entity controller does not have driver. [D:/verilog/myproject/myproject.srcs/sources_1/new/controller.v:27]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/controller.v:2]
+WARNING: [Synth 8-350] instance 'controller' of module 'controller' requires 27 connections, but only 26 given [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:97]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'pc' (3#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (4#1) [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk1' [D:/verilog/myproject/myproject.srcs/sources_1/new/clk1.v:2]
+INFO: [Synth 8-256] done synthesizing module 'clk1' (5#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/clk1.v:2]
+INFO: [Synth 8-638] synthesizing module 'clk2' [D:/verilog/myproject/myproject.srcs/sources_1/new/clk2.v:2]
+INFO: [Synth 8-256] done synthesizing module 'clk2' (6#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/clk2.v:2]
+WARNING: [Synth 8-350] instance 'clk2' of module 'clk2' requires 68 connections, but only 63 given [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:165]
+INFO: [Synth 8-638] synthesizing module 'clk3' [D:/verilog/myproject/myproject.srcs/sources_1/new/clk3.v:2]
+INFO: [Synth 8-256] done synthesizing module 'clk3' (7#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/clk3.v:2]
+WARNING: [Synth 8-350] instance 'clk3' of module 'clk3' requires 43 connections, but only 38 given [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:230]
+INFO: [Synth 8-638] synthesizing module 'clk4' [D:/verilog/myproject/myproject.srcs/sources_1/new/clk4.v:1]
+INFO: [Synth 8-256] done synthesizing module 'clk4' (8#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/clk4.v:1]
+WARNING: [Synth 8-350] instance 'clk4' of module 'clk4' requires 37 connections, but only 35 given [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:273]
+INFO: [Synth 8-638] synthesizing module 'pc_4' [D:/verilog/myproject/myproject.srcs/sources_1/new/pc_sub_4.v:2]
+INFO: [Synth 8-256] done synthesizing module 'pc_4' (9#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/pc_sub_4.v:2]
+INFO: [Synth 8-638] synthesizing module 'submux' [D:/verilog/myproject/myproject.srcs/sources_1/new/submux.v:2]
+INFO: [Synth 8-256] done synthesizing module 'submux' (10#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/submux.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux2_5' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX2.v:9]
+INFO: [Synth 8-256] done synthesizing module 'mux2_5' (11#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX2.v:9]
+INFO: [Synth 8-638] synthesizing module 'adder_pc' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/ADDER_PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'adder_pc' (12#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/ADDER_PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/REG_FILE.v:1]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (13#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/REG_FILE.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (14#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX2.v:1]
+INFO: [Synth 8-638] synthesizing module 'l_expand' [D:/verilog/myproject/myproject.srcs/sources_1/new/l_expand.v:2]
+INFO: [Synth 8-256] done synthesizing module 'l_expand' (15#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/l_expand.v:2]
+INFO: [Synth 8-638] synthesizing module 's_16' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/S_16.v:1]
+INFO: [Synth 8-256] done synthesizing module 's_16' (16#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/S_16.v:1]
+INFO: [Synth 8-638] synthesizing module 's2' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/S_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 's2' (17#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/S_2.v:1]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/verilog/myproject/myproject.srcs/sources_1/new/adder.v:2]
+INFO: [Synth 8-256] done synthesizing module 'adder' (18#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/adder.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux3_5' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX3.v:9]
+INFO: [Synth 8-256] done synthesizing module 'mux3_5' (19#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX3.v:9]
+INFO: [Synth 8-638] synthesizing module 'mux3' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX3.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux3' (20#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX3.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux4' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX4.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (21#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/MUX4.v:1]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/verilog/myproject/myproject.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/div_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (22#1) [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/div_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'div_gen_1' [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/div_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_1' (23#1) [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/div_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (24#1) [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_1' (25#1) [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'valid' [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:1]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register status_reg in module valid. [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register status_reg in module valid. [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+INFO: [Synth 8-256] done synthesizing module 'valid' (26#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:1]
+INFO: [Synth 8-256] done synthesizing module 'alu' (27#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/ALU.v:2]
+WARNING: [Synth 8-350] instance 'alu' of module 'alu' requires 9 connections, but only 8 given [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:441]
+INFO: [Synth 8-638] synthesizing module 'hi_lo' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/HI_LO.v:1]
+INFO: [Synth 8-256] done synthesizing module 'hi_lo' (28#1) [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/HI_LO.v:1]
+INFO: [Synth 8-638] synthesizing module 'conflict' [D:/verilog/myproject/myproject.srcs/sources_1/new/conflict.v:2]
+INFO: [Synth 8-256] done synthesizing module 'conflict' (29#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/conflict.v:2]
+INFO: [Synth 8-638] synthesizing module 'r_expand' [D:/verilog/myproject/myproject.srcs/sources_1/new/r_expand.v:2]
+INFO: [Synth 8-256] done synthesizing module 'r_expand' (30#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/r_expand.v:2]
+WARNING: [Synth 8-3848] Net jepc in module/entity cpu does not have driver. [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:451]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (31#1) [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:24]
+WARNING: [Synth 8-3331] design s2 has unconnected port in[31]
+WARNING: [Synth 8-3331] design s2 has unconnected port in[30]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[31]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[30]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[29]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[28]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[27]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[26]
+WARNING: [Synth 8-3331] design clk3 has unconnected port lexe[1]
+WARNING: [Synth 8-3331] design clk3 has unconnected port lexe[0]
+WARNING: [Synth 8-3331] design clk2 has unconnected port con2_1
+WARNING: [Synth 8-3331] design controller has unconnected port ifexp
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 358.676 ; gain = 114.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin clk2:con3_2[1] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:165]
+WARNING: [Synth 8-3295] tying undriven pin clk2:con3_2[0] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:165]
+WARNING: [Synth 8-3295] tying undriven pin clk2:lex[1] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:165]
+WARNING: [Synth 8-3295] tying undriven pin clk2:lex[0] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:165]
+WARNING: [Synth 8-3295] tying undriven pin clk3:con3_2e[1] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:230]
+WARNING: [Synth 8-3295] tying undriven pin clk3:con3_2e[0] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:230]
+WARNING: [Synth 8-3295] tying undriven pin clk3:lrexe to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:230]
+WARNING: [Synth 8-3295] tying undriven pin clk4:lrexf to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:273]
+WARNING: [Synth 8-3295] tying undriven pin alu:rst to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:441]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[31] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[30] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[29] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[28] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[27] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[26] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[25] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[24] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[23] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[22] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[21] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[20] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[19] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[18] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[17] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[16] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[15] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[14] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[13] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[12] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[11] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[10] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[9] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[8] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[7] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[6] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[5] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[4] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[3] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[2] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[1] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+WARNING: [Synth 8-3295] tying undriven pin mux2_3:in_1[0] to constant 0 [D:/verilog/myproject/myproject.srcs/sources_1/new/myproject.v:458]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 358.676 ; gain = 114.398
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp11/div_gen_0_in_context.xdc] for cell 'alu/div'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp11/div_gen_0_in_context.xdc] for cell 'alu/div'
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp13/div_gen_1_in_context.xdc] for cell 'alu/div_u'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp13/div_gen_1_in_context.xdc] for cell 'alu/div_u'
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp15/mult_gen_0_in_context.xdc] for cell 'alu/mul'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp15/mult_gen_0_in_context.xdc] for cell 'alu/mul'
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp17/mult_gen_1_in_context.xdc] for cell 'alu/mul_u'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp17/mult_gen_1_in_context.xdc] for cell 'alu/mul_u'
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp19/dist_mem_gen_0_in_context.xdc] for cell 'ram'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp19/dist_mem_gen_0_in_context.xdc] for cell 'ram'
+Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp19/dist_mem_gen_0_in_context.xdc] for cell 'memory'
+Finished Parsing XDC File [D:/verilog/myproject/myproject.runs/synth_1/.Xil/Vivado-7176-MSI/dcp19/dist_mem_gen_0_in_context.xdc] for cell 'memory'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 705.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 705.781 ; gain = 461.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 705.781 ; gain = 461.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for alu/div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for alu/div_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for alu/mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for alu/mul_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 705.781 ; gain = 461.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rd1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "r1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "div_ok" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/verilog/myproject/myproject.srcs/sources_1/new/ALU.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'div_ok_reg' [D:/verilog/myproject/myproject.srcs/sources_1/new/ALU.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'r1_reg' [D:/verilog/myproject/myproject.srcs/sources_1/new/ALU.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/HI_LO.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg' [D:/verilog/myproject/myproject.srcs/sources_1/CPU/CPU.srcs/sources_1/new/HI_LO.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 705.781 ; gain = 461.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 26    
+	                5 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 17    
+	                1 Bit    Registers := 25    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   7 Input     64 Bit        Muxes := 1     
+	  29 Input     38 Bit        Muxes := 1     
+	   5 Input     38 Bit        Muxes := 1     
+	  25 Input     38 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 40    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 13    
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	  21 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  29 Input     38 Bit        Muxes := 1     
+	   5 Input     38 Bit        Muxes := 1     
+	  25 Input     38 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module clk1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+Module clk2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+Module clk4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module pc_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module adder_pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module l_expand 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux3_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module valid 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	   7 Input     64 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+Module conflict 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module r_expand 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'clk1/sm1_reg[31:0]' into 'clk1/pcplus4d_reg[31:0]' [D:/verilog/myproject/myproject.srcs/sources_1/new/clk1.v:20]
+WARNING: [Synth 8-6014] Unused sequential element clk1/sm1_reg was removed.  [D:/verilog/myproject/myproject.srcs/sources_1/new/clk1.v:20]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[31]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[30]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[29]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[28]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[27]
+WARNING: [Synth 8-3331] design l_expand has unconnected port in[26]
+WARNING: [Synth 8-3331] design clk3 has unconnected port lexe[1]
+WARNING: [Synth 8-3331] design clk3 has unconnected port lexe[0]
+WARNING: [Synth 8-3331] design clk2 has unconnected port con2_1
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[0]' (FDE) to 'clk2/ice_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[1]' (FDE) to 'clk2/ice_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[2]' (FDE) to 'clk2/ice_reg[3]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[3]' (FDE) to 'clk2/ice_reg[4]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[4]' (FDE) to 'clk2/ice_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[5]' (FDE) to 'clk2/ice_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[6]' (FDE) to 'clk2/ice_reg[7]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[7]' (FDE) to 'clk2/ice_reg[8]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[8]' (FDE) to 'clk2/ice_reg[9]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[9]' (FDE) to 'clk2/ice_reg[10]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[10]' (FDE) to 'clk2/ice_reg[11]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[11]' (FDE) to 'clk2/ice_reg[12]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[12]' (FDE) to 'clk2/ice_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[13]' (FDE) to 'clk2/ice_reg[14]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[14]' (FDE) to 'clk2/ice_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clk2/\ice_reg[15] )
+INFO: [Synth 8-3886] merging instance 'clk1/pcd_reg[0]' (FDCE) to 'clk1/pcplus4d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk2/signimme_reg[26]' (FDE) to 'clk2/signimme_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk2/signimme_reg[27]' (FDE) to 'clk2/signimme_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk2/signimme_reg[28]' (FDE) to 'clk2/signimme_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk2/signimme_reg[29]' (FDE) to 'clk2/signimme_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk2/signimme_reg[30]' (FDE) to 'clk2/signimme_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[0]' (FD) to 'clk3/icf_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[1]' (FD) to 'clk3/icf_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[2]' (FD) to 'clk3/icf_reg[3]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[3]' (FD) to 'clk3/icf_reg[4]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[4]' (FD) to 'clk3/icf_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[5]' (FD) to 'clk3/icf_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[6]' (FD) to 'clk3/icf_reg[7]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[7]' (FD) to 'clk3/icf_reg[8]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[8]' (FD) to 'clk3/icf_reg[9]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[9]' (FD) to 'clk3/icf_reg[10]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[10]' (FD) to 'clk3/icf_reg[11]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[11]' (FD) to 'clk3/icf_reg[12]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[12]' (FD) to 'clk3/icf_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[13]' (FD) to 'clk3/icf_reg[14]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[14]' (FD) to 'clk3/icf_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clk3/\icf_reg[15] )
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[0]' (FDE) to 'clk4/icw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[1]' (FDE) to 'clk4/icw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[2]' (FDE) to 'clk4/icw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[3]' (FDE) to 'clk4/icw_reg[4]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[4]' (FDE) to 'clk4/icw_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[5]' (FDE) to 'clk4/icw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[6]' (FDE) to 'clk4/icw_reg[7]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[7]' (FDE) to 'clk4/icw_reg[8]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[8]' (FDE) to 'clk4/icw_reg[9]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[9]' (FDE) to 'clk4/icw_reg[10]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[10]' (FDE) to 'clk4/icw_reg[11]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[11]' (FDE) to 'clk4/icw_reg[12]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[12]' (FDE) to 'clk4/icw_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[13]' (FDE) to 'clk4/icw_reg[14]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[14]' (FDE) to 'clk4/icw_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clk4/\icw_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (memwritee_reg) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (lexe_reg[1]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (lexe_reg[0]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (rexe_reg[1]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (rexe_reg[0]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (inrupe_reg[2]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (inrupe_reg[1]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (inrupe_reg[0]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (con3_2e_reg[1]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (con3_2e_reg[0]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (con2_3e_reg) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (ice_reg[15]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (memwritef_reg) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (con3_2f_reg[1]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (con3_2f_reg[0]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (con2_3f_reg) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[31]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[30]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[29]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[28]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[27]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[26]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[25]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[24]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[23]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[22]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[21]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[20]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[19]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[18]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[17]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[16]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[15]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[14]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[13]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[12]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[11]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[10]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[9]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[8]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[7]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[6]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[5]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[4]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[3]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[2]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[1]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (writedataf_reg[0]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (rexf_reg[1]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (rexf_reg[0]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (icf_reg[15]) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (lrexf_reg) is unused and will be removed from module clk3.
+WARNING: [Synth 8-3332] Sequential element (memwritew_reg) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (con2_3w_reg) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (icw_reg[15]) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (rexw_reg[1]) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (rexw_reg[0]) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (lrexw_reg) is unused and will be removed from module clk4.
+WARNING: [Synth 8-3332] Sequential element (valid/status_reg[1]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (valid/status_reg[0]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (valid/status_reg[1]__0) is unused and will be removed from module alu.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'alu/valid/status_reg[1]__0/Q' [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+WARNING: [Synth 8-3332] Sequential element (valid/status_reg[0]__0) is unused and will be removed from module alu.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'alu/valid/status_reg[0]__0/Q' [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/verilog/myproject/myproject.srcs/sources_1/new/valid.v:9]
+WARNING: [Synth 8-3332] Sequential element (result_reg[31]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[30]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[29]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[28]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[27]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[26]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[25]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[24]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[23]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[22]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[21]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[20]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[19]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[18]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[17]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[16]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[15]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[14]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[13]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[12]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[11]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[10]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[9]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[8]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[7]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[6]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[5]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[4]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[3]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[2]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[1]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (result_reg[0]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (con2_4e_reg) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (pce_reg[31]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (pce_reg[30]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (pce_reg[29]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (pce_reg[28]) is unused and will be removed from module clk2.
+WARNING: [Synth 8-3332] Sequential element (pce_reg[27]) is unused and will be removed from module clk2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 705.781 ; gain = 461.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------+-----------+----------------------+---------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------+-----------+----------------------+---------------+
+|cpu         | reg_file/rf_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 709.254 ; gain = 464.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 711.258 ; gain = 466.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[28]' (FDRE) to 'clk2/rde_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[29]' (FDRE) to 'clk2/rde_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[27]' (FDRE) to 'clk2/rde_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[30]' (FDRE) to 'clk2/rde_reg[3]'
+INFO: [Synth 8-3886] merging instance 'clk2/ice_reg[31]' (FDRE) to 'clk2/rde_reg[4]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[28]' (FDR) to 'clk3/rdf_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[29]' (FDR) to 'clk3/rdf_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk3/icf_reg[27]' (FDR) to 'clk3/rdf_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk3/rdf_reg[3]' (FDR) to 'clk3/icf_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk3/rdf_reg[4]' (FDR) to 'clk3/icf_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[0]' (FDR) to 'clk3/regdata2f_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[1]' (FDR) to 'clk3/regdata2f_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[2]' (FDR) to 'clk3/regdata2f_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[3]' (FDR) to 'clk3/regdata2f_reg[3]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[4]' (FDR) to 'clk3/regdata2f_reg[4]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[5]' (FDR) to 'clk3/regdata2f_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[6]' (FDR) to 'clk3/regdata2f_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[7]' (FDR) to 'clk3/regdata2f_reg[7]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[8]' (FDR) to 'clk3/regdata2f_reg[8]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[9]' (FDR) to 'clk3/regdata2f_reg[9]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[10]' (FDR) to 'clk3/regdata2f_reg[10]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[11]' (FDR) to 'clk3/regdata2f_reg[11]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[12]' (FDR) to 'clk3/regdata2f_reg[12]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[13]' (FDR) to 'clk3/regdata2f_reg[13]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[14]' (FDR) to 'clk3/regdata2f_reg[14]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[15]' (FDR) to 'clk3/regdata2f_reg[15]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[16]' (FDR) to 'clk3/regdata2f_reg[16]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[17]' (FDR) to 'clk3/regdata2f_reg[17]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[18]' (FDR) to 'clk3/regdata2f_reg[18]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[19]' (FDR) to 'clk3/regdata2f_reg[19]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[20]' (FDR) to 'clk3/regdata2f_reg[20]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[21]' (FDR) to 'clk3/regdata2f_reg[21]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[22]' (FDR) to 'clk3/regdata2f_reg[22]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[23]' (FDR) to 'clk3/regdata2f_reg[23]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[24]' (FDR) to 'clk3/regdata2f_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[25]' (FDR) to 'clk3/regdata2f_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[26]' (FDR) to 'clk3/regdata2f_reg[26]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[27]' (FDR) to 'clk3/regdata2f_reg[27]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[28]' (FDR) to 'clk3/regdata2f_reg[28]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[29]' (FDR) to 'clk3/regdata2f_reg[29]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[30]' (FDR) to 'clk3/regdata2f_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk3/regdata1f_reg[31]' (FDR) to 'clk3/regdata2f_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[28]' (FDRE) to 'clk4/rdw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[29]' (FDRE) to 'clk4/rdw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clk4/icw_reg[27]' (FDRE) to 'clk4/rdw_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk4/rdw_reg[3]' (FDRE) to 'clk4/icw_reg[30]'
+INFO: [Synth 8-3886] merging instance 'clk4/rdw_reg[4]' (FDRE) to 'clk4/icw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'clk4/regdata1w_reg[0]' (FDRE) to 'clk4/regdata2w_reg[0]'
+INFO: [Synth 8-3886] merging instance 'clk4/regdata1w_reg[1]' (FDRE) to 'clk4/regdata2w_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |div_gen_0      |         1|
+|2     |div_gen_1      |         1|
+|3     |mult_gen_0     |         1|
+|4     |mult_gen_1     |         1|
+|5     |dist_mem_gen_0 |         2|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |dist_mem_gen_0    |     1|
+|2     |dist_mem_gen_0__1 |     1|
+|3     |div_gen_0         |     1|
+|4     |div_gen_1         |     1|
+|5     |mult_gen_0        |     1|
+|6     |mult_gen_1        |     1|
+|7     |BUFG              |     3|
+|8     |CARRY4            |    82|
+|9     |LUT1              |    65|
+|10    |LUT2              |   151|
+|11    |LUT3              |   135|
+|12    |LUT4              |   380|
+|13    |LUT5              |   435|
+|14    |LUT6              |   724|
+|15    |MUXF7             |    18|
+|16    |RAM32M            |    12|
+|17    |FDCE              |    96|
+|18    |FDRE              |   496|
+|19    |LD                |   130|
+|20    |IBUF              |     2|
+|21    |OBUF              |    32|
++------+------------------+------+
+
+Report Instance Areas: 
++------+--------------+---------+------+
+|      |Instance      |Module   |Cells |
++------+--------------+---------+------+
+|1     |top           |         |  3083|
+|2     |  alu         |alu      |   294|
+|3     |    valid     |valid    |     1|
+|4     |  clk1        |clk1     |   256|
+|5     |  clk2        |clk2     |  1468|
+|6     |  clk3        |clk3     |   270|
+|7     |  clk4        |clk4     |   274|
+|8     |  hi          |hi_lo    |    65|
+|9     |  lo          |hi_lo_0  |    65|
+|10    |  mux_pcsrcd  |mux2     |    32|
+|11    |  mux_regdste |mux2_5   |     5|
+|12    |  muxalub     |mux2_1   |    32|
+|13    |  muxb        |mux2_2   |    32|
+|14    |  muxc        |mux2_3   |    32|
+|15    |  p_c         |pc       |    71|
+|16    |  pc2         |adder_pc |     9|
+|17    |  reg_file    |reg_file |    76|
++------+--------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 238 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 757.348 ; gain = 165.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 757.348 ; gain = 513.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 226 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 64 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 142 instances were transformed.
+  LD => LDCE: 66 instances
+  LD => LDCE (inverted pins: G): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+183 Infos, 175 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 757.348 ; gain = 520.988
+INFO: [Common 17-1381] The checkpoint 'D:/verilog/myproject/myproject.runs/synth_1/cpu.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 757.348 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 00:55:33 2017...

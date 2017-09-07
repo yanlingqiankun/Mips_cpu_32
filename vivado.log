@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Aug 16 20:25:04 2017
+# Process ID: 8776
+# Current directory: C:/Users/lenovo/Desktop/myproject/myproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6036 C:\Users\lenovo\Desktop\myproject\myproject\myproject.xpr
+# Log file: C:/Users/lenovo/Desktop/myproject/myproject/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/myproject/myproject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/myproject/myproject/myproject.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 759.172 ; gain = 31.148
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Aug 16 20:30:49 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/myproject/myproject/myproject.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Aug 16 20:34:28 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/myproject/myproject/myproject.runs/synth_1/runme.log
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Aug 16 20:45:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/myproject/myproject/myproject.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Aug 16 21:05:15 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/myproject/myproject/myproject.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 17 00:22:56 2017...

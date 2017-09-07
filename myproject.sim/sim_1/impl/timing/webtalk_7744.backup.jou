@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Aug 19 20:15:03 2017
+# Process ID: 7744
+# Current directory: D:/verilog/myproject/myproject/myproject.sim/sim_1/impl/timing
+# Command line: wbtcv.exe -mode batch -source D:/verilog/myproject/myproject/myproject.sim/sim_1/impl/timing/xsim.dir/cpu_tb_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/verilog/myproject/myproject/myproject.sim/sim_1/impl/timing/webtalk.log
+# Journal file: D:/verilog/myproject/myproject/myproject.sim/sim_1/impl/timing\webtalk.jou
+#-----------------------------------------------------------
+source D:/verilog/myproject/myproject/myproject.sim/sim_1/impl/timing/xsim.dir/cpu_tb_time_impl/webtalk/xsim_webtalk.tcl -notrace

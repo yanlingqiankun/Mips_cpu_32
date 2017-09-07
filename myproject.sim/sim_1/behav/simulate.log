@@ -1,0 +1,6 @@
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in cpu_tb.cpu.memory.inst at time                17000 ns: 
+Reading from out-of-range address. Max address in cpu_tb.cpu.memory.inst is        1023
